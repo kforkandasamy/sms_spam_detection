@@ -1,0 +1,110 @@
+{
+    "dataset": {
+        "total_raw": 5572,
+        "duplicates": 403,
+        "total_cleaned": 5169,
+        "n_ham": 4516,
+        "n_spam": 653,
+        "p_ham": 0.873669955503966,
+        "p_spam": 0.12633004449603405
+    },
+    "words": [
+        {
+            "word": "free",
+            "total_occurrences": 203,
+            "spam_occurrences": 148,
+            "ham_occurrences": 55,
+            "p_word": 0.039272586573805376,
+            "p_word_given_spam": 0.22664624808575803,
+            "p_word_given_ham": 0.012178919397697077,
+            "p_spam_given_word_empirical": 0.729064039408867,
+            "p_spam_given_word_bayes": 0.729064039408867
+        },
+        {
+            "word": "prize",
+            "total_occurrences": 73,
+            "spam_occurrences": 73,
+            "ham_occurrences": 0,
+            "p_word": 0.01412265428516154,
+            "p_word_given_spam": 0.11179173047473201,
+            "p_word_given_ham": 0.0,
+            "p_spam_given_word_empirical": 1.0,
+            "p_spam_given_word_bayes": 1.0
+        },
+        {
+            "word": "win",
+            "total_occurrences": 55,
+            "spam_occurrences": 49,
+            "ham_occurrences": 6,
+            "p_word": 0.010640355968272393,
+            "p_word_given_spam": 0.07503828483920368,
+            "p_word_given_ham": 0.001328609388839681,
+            "p_spam_given_word_empirical": 0.8909090909090909,
+            "p_spam_given_word_bayes": 0.8909090909090909
+        },
+        {
+            "word": "urgent",
+            "total_occurrences": 62,
+            "spam_occurrences": 57,
+            "ham_occurrences": 5,
+            "p_word": 0.011994583091507062,
+            "p_word_given_spam": 0.08728943338437979,
+            "p_word_given_ham": 0.0011071744906997344,
+            "p_spam_given_word_empirical": 0.9193548387096774,
+            "p_spam_given_word_bayes": 0.9193548387096775
+        },
+        {
+            "word": "offer",
+            "total_occurrences": 30,
+            "spam_occurrences": 24,
+            "ham_occurrences": 6,
+            "p_word": 0.005803830528148578,
+            "p_word_given_spam": 0.036753445635528334,
+            "p_word_given_ham": 0.001328609388839681,
+            "p_spam_given_word_empirical": 0.8,
+            "p_spam_given_word_bayes": 0.8
+        }
+    ],
+    "random_variable": {
+        "p": 0.12633004449603405,
+        "E_Y": 0.12633004449603405,
+        "Var_Y": 0.11037076435366411,
+        "Std_Y": 0.3322209571259226
+    },
+    "model_evaluation": {
+        "accuracy": 0.9835589941972921,
+        "precision": 0.9596774193548387,
+        "recall": 0.9083969465648855,
+        "f1": 0.9333333333333333,
+        "tn": 898,
+        "fp": 5,
+        "fn": 12,
+        "tp": 119
+    },
+    "realtime": [
+        {
+            "message": "Congratulations! You have won a free prize. Claim now.",
+            "prediction": "Spam",
+            "p_spam": 0.9999996802610922,
+            "p_ham": 3.1973890636743715e-07
+        },
+        {
+            "message": "Hey bro, are we meeting at the campus library this evening?",
+            "prediction": "Ham (Genuine)",
+            "p_spam": 1.983427963244901e-05,
+            "p_ham": 0.9999801657203685
+        },
+        {
+            "message": "URGENT! Your mobile number won 1000 prize. Call now to claim offer.",
+            "prediction": "Spam",
+            "p_spam": 0.9999999995961133,
+            "p_ham": 4.03884362153994e-10
+        },
+        {
+            "message": "Can you send me the lecture notes for probability and statistics?",
+            "prediction": "Ham (Genuine)",
+            "p_spam": 0.07909759692862411,
+            "p_ham": 0.9209024030713763
+        }
+    ]
+}
